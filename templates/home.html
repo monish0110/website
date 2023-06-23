@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <style>
+            div{
+                max-width: 720px;
+                margin:0, auto;
+            }
+        </style>
+        
+            <title>The Real World</title>
+            <style>
+                body {
+                background-color:rgb(255, 255, 255);
+            }
+            
+            #head{
+                font-size: 60px;
+                text-align: center;
+                font-family: cursive;
+                color:rgb(0, 0, 0);
+                font-weight: normal;
+            }
+
+            #content{
+                color: rgb(46, 45, 45);
+                font-size: 32px;
+
+            }
+            #picture{
+                float:right;
+            margin-top: 0px;
+            margin-left: 20px;
+            margin-right: 40px;
+            width: 300px;
+            height: 400px;
+            object-fit: cover;
+
+            }
+            h2{
+                margin-bottom: 20px;
+                font-size: 45px;
+                color:rgb(67, 67, 67)
+                
+            }
+            
+            </style>
+            
+            <h1 id="head">Hustlers University</h1>
+            <img 
+            id="picture"
+            src="https://images.news18.com/ibnlive/uploads/2022/08/andere.jpg" alt="Andrew Tate">
+            <h2>About Andrew Tate</h2>
+            
+
+            <p id="content" >The word 'Top G' looks suitable to be used in reference to Andrew Tate, who has built a personality of being adept at everything. Tate's a businessman, fighter, motivational-speaker, internet personality and car-enthusiast.
+
+                The former kickboxer has built a narrative around him which makes him seem a step above the rest.
+                
+                'Cobra' started to come to light through Tik Tok where clips of his controversial statements started to go viral. They spread like wildfire and his statements soon took over Instagram as well. However, the majority of his takes were viewed as a product of toxic masculinity and his remarks led to him being banned from social media.</p>
+            
+            <div style="font-size: 30px;">
+                <div style="margin-top: 20px;">
+                    {% for friends in friends %}
+                     {% include 'profile.html' %}
+                    {%endfor%}
+                </div>     
+            </div>
+        
+
+        <style>
+            picture{
+                margin-right: 0px;
+                margin-top: 0px;
+            }
+        </style>    
+        <div style="margin-bottom: 30px;margin-left: 740px;">
+            <div class = "text-align">        
+                <button type="button" class="btn btn-dark">Contact Us</button> 
+
+              
+            </div>   
+        </div> 
+
+        
+        
+ </head> 
+
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+    </style>
+    <title>The Real World</title>
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+        #head {
+            font-size: 60px;
+            text-align: center;
+            font-family: cursive;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
+        }
+        #content {
+            color: rgb(46, 45, 45);
+            font-size: 32px;
+        }
+        #picture {
+            float: right;
+            margin-top: 0px;
+            margin-left: 20px;
+            margin-right: 40px;
+            width: 300px;
+            height: 400px;
+            object-fit: cover;
+        }
+        h2 {
+            font-size: 45px;
+            color: rgb(67, 67, 67)
+        }
+    </style>
+</head>
+<body>
+    <h1 id="head">Hustlers University</h1>
+    <img id="picture" src="https://images.news18.com/ibnlive/uploads/2022/08/andere.jpg" alt="Andrew Tate">
+    <h2>About Andrew Tate</h2>
+    <p id="content">The word 'Top G' looks suitable to be used in reference to Andrew Tate, who has built a personality of being adept at everything. Tate's a businessman, fighter, motivational-speaker, internet personality, and car-enthusiast.
+
+        The former kickboxer has built a narrative around him which makes him seem a step above the rest.
+        
+        'Cobra' started to come to light through Tik Tok where clips of his controversial statements started to go viral. They spread like wildfire and his statements soon took over Instagram as well. However, the majority of his takes were viewed as a product of toxic masculinity and his remarks led to him being banned from social media.
+    </p>
+    <div>
+        {% for friend in friends %}
+           <div>Name: {{ friend['name'] }}</div>
+           <div>Age: {{ friend['age'] }}</div>
+           <div>Profession: {{ friend['Pro'] }}</div>
+        {% endfor %}
+    </div>
+</body>
+</html> -->
